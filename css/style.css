@@ -17,6 +17,16 @@
      outline: -webkit-focus-ring-color auto 0px !important;
  }
  
+ .main-titlee {
+     font-weight: 500;
+     font-family: 'cormorant-garamond-semibold', sans-serif !important;
+ }
+ 
+ .bi {
+     color: #9CB0AF;
+     filter: brightness(0.7);
+ }
+ 
  .call-btn {
      background: #9CB0AF;
      border-radius: 5px;
@@ -83,11 +93,10 @@
  }
  
  #myVideo {
-     object-fit: cover;
-     object-position: center;
-     border-radius: 20px;
-     height: 400px !important;
-     width: 100%;
+     display: block;
+     overflow: hidden;
+     border-radius: 10px;
+     max-width: 100%;
  }
  
  .text-mine {
