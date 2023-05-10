@@ -115,6 +115,22 @@
      line-height: 2rem;
  }
  
+ .custom-underline {
+     position: relative;
+     margin-bottom: 3rem;
+ }
+ 
+ .custom-underline::after {
+     content: "";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 100px;
+     height: 3px;
+     background-color: #9CB0AF;
+     transform: translateX(-50%);
+ }
+ 
  .rounded-mine {
      border-radius: 10px;
  }
