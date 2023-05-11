@@ -272,6 +272,14 @@
      padding-right: 5px;
  }
  
+ .factimg {
+     object-fit: cover;
+     position: relative;
+     border-radius: 15px;
+     height: 500px;
+     width: 100%;
+ }
+ 
  .fields {
      width: 100%;
      padding: 1.5rem 1.5rem;
