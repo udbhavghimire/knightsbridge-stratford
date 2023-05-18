@@ -3,7 +3,8 @@
      box-sizing: border-box;
      margin: 0;
      padding: 0;
-     font-family: "cormorant-garamond-semibold", sans-serif !important;
+     /* font-family: "cormorant-garamond-semibold", sans-serif !important; */
+     font-family: "avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light", sans-serif !important;
      letter-spacing: 0.2px;
  }
  
@@ -221,7 +222,7 @@
      left: 10px;
      color: white;
      z-index: 22;
-     font-weight: 900;
+     font-weight: 700;
      letter-spacing: 0.2px;
      text-shadow: 1px 1px #000000;
      font-size: 1.7rem;
