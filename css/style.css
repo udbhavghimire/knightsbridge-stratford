@@ -142,6 +142,7 @@
      font-size: 1.2rem;
      max-width: 500px;
      line-height: 2rem;
+     text-align: justify;
  }
  
  .headline-textt-fact {
@@ -390,5 +391,12 @@
      }
      .infotext {
          font-size: 1.4rem;
+     }
+     .main-titlee {
+         justify-content: center;
+         text-align: center;
+     }
+     .center-sm {
+         text-align: center;
      }
  }
