@@ -18,21 +18,21 @@
  }
  
  .brand-color {
-     color: #274287;
+     color: #719D9A;
  }
  
  .main-titlee {
      font-weight: 500;
-     color: #274287;
+     color: #719D9A;
  }
  
  .bi-check-circle-fill {
-     color: #274287;
+     color: #719D9A;
      filter: brightness(0.7);
  }
  
  .call-btn {
-     background: #274287;
+     background: #719D9A;
      border-radius: 5px;
      color: white;
      /* border: 2px solid #ffffff; */
@@ -42,7 +42,7 @@
  }
  
  .call-btn:hover {
-     background-image: linear-gradient(106deg, #274287, rgb(77, 77, 77));
+     background-image: linear-gradient(106deg, #719D9A, rgb(77, 77, 77));
      color: white;
  }
  
@@ -72,7 +72,7 @@
  .nav-link:hover,
  .nav-link-active {
      color: #000000 !important;
-     text-decoration: underline #274287!important;
+     text-decoration: underline #719D9A!important;
      text-underline-offset: 5px;
      text-decoration-thickness: 2px;
  }
@@ -161,7 +161,7 @@
      left: 50%;
      width: 100px;
      height: 3px;
-     background-color: #274287;
+     background-color: #719D9A;
      transform: translateX(-50%);
  }
  
@@ -170,7 +170,7 @@
  }
  
  .mybox {
-     border-left: 3px solid #274287;
+     border-left: 3px solid #719D9A;
      padding-left: 9px;
  }
  
@@ -367,7 +367,7 @@
 } */
  
  .underline {
-     text-decoration: underline #274287!important;
+     text-decoration: underline #719D9A!important;
      text-underline-offset: 15px;
      text-decoration-thickness: 2px;
  }
