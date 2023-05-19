@@ -99,6 +99,7 @@
  }
  
  #myVideo {
+     position: absolute;
      display: block;
      overflow: hidden;
      border-radius: 10px;
