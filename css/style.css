@@ -381,6 +381,10 @@
      text-decoration-thickness: 2px;
  }
  
+ .signature {
+     width: 80px;
+ }
+ 
  @media (max-width: 700px) {
      .mess {
          height: 100px !important;
