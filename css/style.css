@@ -375,12 +375,6 @@
     height: 0;
 } */
  
- .underline {
-     text-decoration: underline #719D9A!important;
-     text-underline-offset: 15px;
-     text-decoration-thickness: 2px;
- }
- 
  .signature {
      width: 80px;
  }
@@ -409,5 +403,14 @@
      }
      .center-sm {
          text-align: center;
+     }
+     .headline-textt-sm {
+         text-align: center;
+         padding-left: 4px;
+         padding-right: 4px;
+     }
+     .custom-underline {
+         position: relative;
+         margin-bottom: 2rem;
      }
  }
