@@ -23,6 +23,7 @@
     <meta property="og:title" content="Knightsbridge - Stratford | Plans, Price and Availability" />
     <meta property="og:description" content="New Homes in Stratford Knightsbridge, home to never seen before designs all providing open concepts, modern finishes, and traditional touches that all work together to redefine new age living. " />
 
+
     <body>
         <div class="modal d-none mymodal">
             <section class="modal-main2 rounded-3">
@@ -90,6 +91,7 @@
                 </div>
             </nav>
         </div>
+        <a href="https://calendly.com/newhomesales-1/knightsbridge-grand-opening?month=2023-06" target="_blank"><img src="images/Knightsbridge- Grand Opening-06.png" class="img-fluid" alt="Knightsbridge - Grand Opening"></a>
 
         <div class="main">
             <section class="pt-3 py-md-5">
@@ -486,30 +488,34 @@
                     <div class="row row-cols-1 row-cols-md-3 mx-0 g-5 pb-md-5">
                         <div class="col-md-3 "></div>
                         <div class="col-md-6 px-md-5 ">
-                            <form action="contactForm.php " method="POST ">
-                                <div class="row ">
-                                    <div class="mb-3 "><input type="text " placeholder="Name " name="name " class="fields "></div>
+
+                            <form>
+                                <div class="row">
+                                    <div class="mb-3 "><input type="text " placeholder="Name " name="name" id="name" class="fields "></div>
 
                                 </div>
                                 <div class="row row-cols-1 row-cols-sm-2 ">
                                     <div class="col ">
-                                        <div class="mb-3 "><input type="text " aria-describedby="emailHelp " placeholder="Phone " name="phone " class="fields "></div>
+                                        <div class="mb-3 "><input type="text " aria-describedby="emailHelp " placeholder="Phone " name="phone" id="phone" class="fields "></div>
                                     </div>
                                     <div class="col ">
-                                        <div class="mb-3 "><input type="text " aria-describedby="emailHelp " placeholder="Email " name="email " class="fields "></div>
+                                        <div class="mb-3 "><input type="text " aria-describedby="emailHelp " placeholder="Email " name="email" id="email" class="fields "></div>
                                     </div>
                                 </div>
                                 <div class="row ">
-                                    <div class="mb-3 "><textarea name="message " id="message " placeholder="Enter your message " class="fields mess "></textarea></div>
+                                    <div class="mb-3 "><textarea name="message " id="message" placeholder="Enter your message" class="fields mess "></textarea></div>
                                 </div>
                                 <div class="row">
                                     <p class=" text-muted sm-text text-center">I consent to receive future communications about Knightsbridge in Stratford. I understand I can opt out at anytime by sending an email.</p>
                                 </div>
                                 <div class="row">
-                                    <div class="col text-center"><input type="submit" value="Send " class="btn call-btn btn-sm p-2 px-4 btn-lg" id="subbtn2">
+                                    <div class="col text-center">
+                                        <!-- <input type="submit" onclick="sendMail()" value="Send" class="btn call-btn btn-sm p-2 px-4 btn-lg"> -->
+                                        <Button class="btn call-btn btn-sm p-2 px-4 btn-lg">Send</Button>
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                         <div class="row-cols-md-3"></div>
                     </div>
@@ -568,6 +574,7 @@
                 </footer>
 
             </section>
+
 
 
             <script src="js/plan.js"></script>
