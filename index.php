@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +26,10 @@
     <meta property="og:description" content="New Homes in Stratford Knightsbridge, home to never seen before designs all providing open concepts, modern finishes, and traditional touches that all work together to redefine new age living. " />
 
     <body>
+    <?php
+    session_start();
+    
+?>
         <div class="modal d-none mymodal">
             <section class="modal-main2 rounded-3">
                 <div class="p-3 py-4">
@@ -90,7 +96,7 @@
                 </div>
             </nav>
         </div>
-
+ <a href="https://calendly.com/newhomesales-1/knightsbridge-grand-opening?month=2023-06" target="_blank"><img src="images/Knightsbridge- Grand Opening-06.webp" class="img-fluid" alt="Knightsbridge - Grand Opening"></a>
         <div class="main">
             <section class="pt-3 py-md-5">
                 <div class="container" id="hero">
@@ -486,27 +492,28 @@
                     <div class="row row-cols-1 row-cols-md-3 mx-0 g-5 pb-md-5">
                         <div class="col-md-3 "></div>
                         <div class="col-md-6 px-md-5 ">
-                            <form action="contactForm.php " method="POST ">
+                            <form action="contactForm.php" method="POST">
+                          
                                 <div class="row ">
-                                    <div class="mb-3 "><input type="text " placeholder="Name " name="name " class="fields "></div>
+                                    <div class="mb-3 "><input type="text " placeholder="Name" name="name" class="fields "></div>
 
                                 </div>
                                 <div class="row row-cols-1 row-cols-sm-2 ">
                                     <div class="col ">
-                                        <div class="mb-3 "><input type="text " aria-describedby="emailHelp " placeholder="Phone " name="phone " class="fields "></div>
+                                        <div class="mb-3 "><input type="text" placeholder="Phone" name="phone" class="fields "></div>
                                     </div>
                                     <div class="col ">
-                                        <div class="mb-3 "><input type="text " aria-describedby="emailHelp " placeholder="Email " name="email " class="fields "></div>
+                                        <div class="mb-3 "><input type="text" placeholder="Email" name="email" class="fields "></div>
                                     </div>
                                 </div>
                                 <div class="row ">
-                                    <div class="mb-3 "><textarea name="message " id="message " placeholder="Enter your message " class="fields mess "></textarea></div>
+                                    <div class="mb-3 "><textarea name="message" id="message" placeholder="Enter your message " class="fields mess "></textarea></div>
                                 </div>
                                 <div class="row">
                                     <p class=" text-muted sm-text text-center">I consent to receive future communications about Knightsbridge in Stratford. I understand I can opt out at anytime by sending an email.</p>
                                 </div>
                                 <div class="row">
-                                    <div class="col text-center"><input type="submit" value="Send " class="btn call-btn btn-sm p-2 px-4 btn-lg" id="subbtn2">
+                                    <div class="col text-center"><input type="submit" value="Send" class="btn call-btn btn-sm p-2 px-4 btn-lg" id="subbtn2">
                                     </div>
                                 </div>
                             </form>
@@ -574,8 +581,44 @@
             <script src="js/all.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
             <script src="https://kit.fontawesome.com/b2682bc451.js" crossorigin="anonymous" async></script>
+            <script src="js/sweetalert.min.js"></script>
+            
+            <?php
+        if(
+        isset($_SESSION['success'])
+        ){
+            ?>
+    <script type="text/javascript" async>
+        swal({
+            title: "Message received!",
+            text: 'Thank you for your Message.\r\nWe will reach out to you shortly!',
+            button: false,
+            icon: 'success',
+            timer: 3000
+        });
+    </script>
+    <?php
+            unset($_SESSION['success']);
+        }
 
-
-    </body>
+        if(
+            isset($_SESSION['error'])
+            ){
+                ?>
+    <script type="text/javascript" async>
+        swal({
+            title: "Message not received!",
+            text: "<?php echo $_SESSION['error']; ?>",
+            button: false,
+            timer: 2000
+        });
+    </script>
+    <?php
+                unset($_SESSION['error']);
+            }
+    ?>
+   
+   
+        </body>
 
 </html>
